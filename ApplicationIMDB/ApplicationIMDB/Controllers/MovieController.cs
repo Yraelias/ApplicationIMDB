@@ -7,27 +7,27 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ApplicationIMDB.Controllers
 {
-    public class MoviesController : Controller
+    public class MovieController : Controller
     {
-        // GET: MoviesController
+        // GET: Movie
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: MoviesController/Details/5
+        // GET: Movie/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: MoviesController/Create
+        // GET: Movie/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: MoviesController/Create
+        // POST: Movie/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -42,13 +42,13 @@ namespace ApplicationIMDB.Controllers
             }
         }
 
-        // GET: MoviesController/Edit/5
+        // GET: Movie/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: MoviesController/Edit/5
+        // POST: Movie/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -63,13 +63,13 @@ namespace ApplicationIMDB.Controllers
             }
         }
 
-        // GET: MoviesController/Delete/5
+        // GET: Movie/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: MoviesController/Delete/5
+        // POST: Movie/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

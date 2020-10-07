@@ -8,10 +8,10 @@ namespace ApplicationIMDB.Models
 {
     public class Autor
     {
-        private int Id_Autor { get; set; }
+        public int Id_Autor { get; set; }
         [Required]
-        private string FirstName { get; set; }
+        public string FirstName { get; set; }
         [Required]
-        private int LastName { get; set; }
+        public string LastName { get; set; }
     }
 }

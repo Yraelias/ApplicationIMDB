@@ -2,32 +2,43 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationIMDB.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApplicationIMDB.Controllers
 {
-    public class UsersController : Controller
+    public class AutorController : Controller
     {
-        // GET: UsersController
+        Autor autor = new Autor()
+        {
+            Id_Autor = 10,
+            FirstName = "Michel",
+            LastName = "Bibine",
+        };
+        List<Autor> listAut = new List<Autor>();
+        
+        // GET: Autor
         public ActionResult Index()
         {
-            return View();
+            listAut.Add(autor);
+            listAut.Add(autor);
+            return View(listAut);
         }
 
-        // GET: UsersController/Details/5
+        // GET: Autor/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: UsersController/Create
+        // GET: Autor/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: UsersController/Create
+        // POST: Autor/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -42,13 +53,13 @@ namespace ApplicationIMDB.Controllers
             }
         }
 
-        // GET: UsersController/Edit/5
+        // GET: Autor/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: UsersController/Edit/5
+        // POST: Autor/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -63,13 +74,13 @@ namespace ApplicationIMDB.Controllers
             }
         }
 
-        // GET: UsersController/Delete/5
+        // GET: Autor/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: UsersController/Delete/5
+        // POST: Autor/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
