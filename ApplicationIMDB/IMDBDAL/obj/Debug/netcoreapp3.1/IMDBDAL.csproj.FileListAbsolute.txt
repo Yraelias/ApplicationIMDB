@@ -1,0 +1,12 @@
+E:\Formation\ApplicationIMDB\ApplicationIMDB\IMDBDAL\bin\Debug\netcoreapp3.1\IMDBDAL.exe
+E:\Formation\ApplicationIMDB\ApplicationIMDB\IMDBDAL\bin\Debug\netcoreapp3.1\IMDBDAL.deps.json
+E:\Formation\ApplicationIMDB\ApplicationIMDB\IMDBDAL\bin\Debug\netcoreapp3.1\IMDBDAL.runtimeconfig.json
+E:\Formation\ApplicationIMDB\ApplicationIMDB\IMDBDAL\bin\Debug\netcoreapp3.1\IMDBDAL.runtimeconfig.dev.json
+E:\Formation\ApplicationIMDB\ApplicationIMDB\IMDBDAL\bin\Debug\netcoreapp3.1\IMDBDAL.dll
+E:\Formation\ApplicationIMDB\ApplicationIMDB\IMDBDAL\bin\Debug\netcoreapp3.1\IMDBDAL.pdb
+E:\Formation\ApplicationIMDB\ApplicationIMDB\IMDBDAL\obj\Debug\netcoreapp3.1\IMDBDAL.csprojAssemblyReference.cache
+E:\Formation\ApplicationIMDB\ApplicationIMDB\IMDBDAL\obj\Debug\netcoreapp3.1\IMDBDAL.AssemblyInfoInputs.cache
+E:\Formation\ApplicationIMDB\ApplicationIMDB\IMDBDAL\obj\Debug\netcoreapp3.1\IMDBDAL.AssemblyInfo.cs
+E:\Formation\ApplicationIMDB\ApplicationIMDB\IMDBDAL\obj\Debug\netcoreapp3.1\IMDBDAL.dll
+E:\Formation\ApplicationIMDB\ApplicationIMDB\IMDBDAL\obj\Debug\netcoreapp3.1\IMDBDAL.pdb
+E:\Formation\ApplicationIMDB\ApplicationIMDB\IMDBDAL\obj\Debug\netcoreapp3.1\IMDBDAL.genruntimeconfig.cache

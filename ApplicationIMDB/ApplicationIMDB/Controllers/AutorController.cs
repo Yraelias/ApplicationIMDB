@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 using ApplicationIMDB.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore;
 
 namespace ApplicationIMDB.Controllers
 {
     public class AutorController : Controller
     {
-        
+        private string _connectionString = "@Data Source=localhost;Initial Catalog=IMDB;Integrated Security=True";
         Autor autor = new Autor()
         {
             Id_Autor = 10,
@@ -23,7 +21,9 @@ namespace ApplicationIMDB.Controllers
         
         // GET: Autor
         public ActionResult Index()
-        {
+        {   
+
+            listAut.Add(autor);
             listAut.Add(autor);
             return View(listAut);
         }
@@ -31,8 +31,7 @@ namespace ApplicationIMDB.Controllers
         // GET: Autor/Details/5
         public ActionResult Details(int id)
         {
-            listAut.Add(autor);
-            return View(autor);
+            return View();
         }
 
         // GET: Autor/Create
