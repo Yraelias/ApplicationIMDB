@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace IMDBDAL.Repositories
+namespace ApplicationIMDB.DAL.Repositories
 {
     class AutorRepository : BaseRepository<Autor,int>
     {

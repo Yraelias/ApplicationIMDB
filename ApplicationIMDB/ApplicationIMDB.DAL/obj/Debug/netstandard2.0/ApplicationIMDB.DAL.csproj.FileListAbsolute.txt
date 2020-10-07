@@ -1,0 +1,4 @@
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\bin\Debug\netstandard2.0\ApplicationIMDB.Models.dll
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\obj\Debug\netstandard2.0\ApplicationIMDB.DAL.csprojAssemblyReference.cache
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\obj\Debug\netstandard2.0\ApplicationIMDB.DAL.AssemblyInfoInputs.cache
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\obj\Debug\netstandard2.0\ApplicationIMDB.DAL.AssemblyInfo.cs

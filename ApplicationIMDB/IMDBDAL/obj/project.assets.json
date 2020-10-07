@@ -2090,6 +2090,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "ApplicationIMDB.DAL": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.8",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.4",
           "System.Data.SqlClient": "4.8.2"
@@ -2103,6 +2104,30 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "ApplicationIMDB.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "ApplicationIMDB.Models": "1.0.0",
+          "System.Data.SqlClient": "4.8.2"
+        },
+        "compile": {
+          "bin/placeholder/ApplicationIMDB.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApplicationIMDB.DAL.dll": {}
+        }
+      },
+      "ApplicationIMDB.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ApplicationIMDB.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApplicationIMDB.Models.dll": {}
+        }
       }
     }
   },
@@ -6930,6 +6955,16 @@
       "type": "project",
       "path": "../ApplicationIMDB/ApplicationIMDB.csproj",
       "msbuildProject": "../ApplicationIMDB/ApplicationIMDB.csproj"
+    },
+    "ApplicationIMDB.DAL/1.0.0": {
+      "type": "project",
+      "path": "../ApplicationIMDB.DAL/ApplicationIMDB.DAL.csproj",
+      "msbuildProject": "../ApplicationIMDB.DAL/ApplicationIMDB.DAL.csproj"
+    },
+    "ApplicationIMDB.Models/1.0.0": {
+      "type": "project",
+      "path": "../ApplicationIMDB.Models/ApplicationIMDB.Models.csproj",
+      "msbuildProject": "../ApplicationIMDB.Models/ApplicationIMDB.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6944,9 +6979,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Formation\\ApplicationIMDB\\ApplicationIMDB\\IMDBDAL\\IMDBDAL.csproj",
-      "projectName": "IMDBDAL",
-      "projectPath": "E:\\Formation\\ApplicationIMDB\\ApplicationIMDB\\IMDBDAL\\IMDBDAL.csproj",
+      "projectUniqueName": "E:\\Formation\\ApplicationIMDB\\ApplicationIMDB\\IMDBDAL\\ApplicationIMDB.DALAncien.csproj",
+      "projectName": "ApplicationIMDB.DALAncien",
+      "projectPath": "E:\\Formation\\ApplicationIMDB\\ApplicationIMDB\\IMDBDAL\\ApplicationIMDB.DALAncien.csproj",
       "packagesPath": "C:\\Users\\dav23\\.nuget\\packages\\",
       "outputPath": "E:\\Formation\\ApplicationIMDB\\ApplicationIMDB\\IMDBDAL\\obj\\",
       "projectStyle": "PackageReference",

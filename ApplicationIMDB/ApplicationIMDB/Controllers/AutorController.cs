@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationIMDB.DAL.Repositories;
+using ApplicationIMDB.DAL.Services;
 using ApplicationIMDB.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,6 +12,8 @@ namespace ApplicationIMDB.Controllers
 {
     public class AutorController : Controller
     {
+        AutorService service;
+        AutorRepository repository;
         Autor autor = new Autor()
         {
             Id_Autor = 10,

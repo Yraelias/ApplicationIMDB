@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IMDBDAL
+namespace ApplicationIMDB.DAL
 {
     class Program
     {

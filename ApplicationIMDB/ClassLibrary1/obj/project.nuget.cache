@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "jGTLfOEdT2DRTFzxcDeGQNPYe6GxSjZMquDWNkBWxHsBD6BvFcaIGokbSJ4WIl4/AZshEjRcGkmEUlPmGW8wBQ==",
+  "success": true,
+  "projectFilePath": "E:\\Formation\\ApplicationIMDB\\ApplicationIMDB\\ClassLibrary1\\ClassLibrary1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dav23\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\dav23\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace IMDBDAL.Services
+namespace ApplicationIMDB.DAL.Services
 {
     public class AutorService : BaseService<Autor,int>
     {

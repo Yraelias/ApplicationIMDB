@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Text;
 
-namespace IMDBDAL
+namespace ApplicationIMDB.DAL
 {
     public abstract class BaseRepository<T,Tkey>
     {
