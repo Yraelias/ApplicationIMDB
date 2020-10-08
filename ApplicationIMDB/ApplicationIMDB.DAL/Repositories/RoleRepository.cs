@@ -5,9 +5,9 @@ using System.Text;
 
 namespace ApplicationIMDB.DAL.Repositories
 {
-    public class UserRepository : BaseRepository<User,int>
+    class RoleRepository : BaseRepository<Role,int>
     {
-        public IEnumerable<User> Get(string query)
+        public IEnumerable<Role> Get(string query)
         {
             return base.ExecuteReader(query);
         }

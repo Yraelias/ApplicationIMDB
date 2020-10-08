@@ -9,15 +9,16 @@ namespace ApplicationIMDB.Models
     public class User
     {
         [Required]
-        private string Login { get; set; }
+        public string Login { get; set; }
         [Required]
-        private string Password { get; set; }
-        private string FirstName { get; set; }
-        private string LastName { get; set; }
+        public string Password { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         [Required]
-        private DateTime Date_Of_Birth { get; set; }
-        private bool isActive { get; set; }
-        private Role role { get; set; }
+        public DateTime Date_Of_Birth { get; set; }
+        public bool isActive { get; set; }
+        public int Id_Role { get; set; }
+        public Role RoleName { get; set; }
 
     }
 }

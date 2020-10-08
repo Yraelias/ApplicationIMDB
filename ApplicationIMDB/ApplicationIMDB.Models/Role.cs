@@ -7,7 +7,7 @@ namespace ApplicationIMDB.Models
 {
     public class Role
     {
-        private int Id_Role { get; set; }
-        private string Name { get; set; }
+        public int Id_Role { get; set; }
+        public string Name { get; set; }
     }
 }
