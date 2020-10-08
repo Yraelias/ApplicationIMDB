@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ApplicationIMDB.DAL.Services
 {
-    class RoleService : BaseService<Role, int>
+    public class RoleService : BaseService<Role, int>
     {
         RoleRepository repo;
         public RoleService()
