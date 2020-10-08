@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Text;
+using System.Dynamic;
+using System.Linq;
+using System.Reflection;
+using ApplicationIMDB.DAL.Extensions;
 
 namespace ApplicationIMDB.DAL
 {
     public abstract class BaseRepository<T,Tkey>
     {
-        private string _connectionString = "@Data Source=localhost;Initial Catalog=IMDB;Integrated Security=True";
+        private string _connectionString = "Data Source=localhost;Initial Catalog=IMDB;Integrated Security=True";
         protected IDbConnection connection;
 
         public BaseRepository()
@@ -28,7 +32,7 @@ namespace ApplicationIMDB.DAL
                 //parcourir datareader et ajouter a une liste <T>
                 while(dr.Read())
                 {
-                    list.Add((T)dr);
+                    list.Add(dr.ConvertTo<T>());
                 }
             }
             if (connection.State != ConnectionState.Closed)

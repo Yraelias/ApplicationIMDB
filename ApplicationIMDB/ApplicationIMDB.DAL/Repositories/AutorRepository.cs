@@ -7,9 +7,9 @@ namespace ApplicationIMDB.DAL.Repositories
 {
     public class AutorRepository : BaseRepository<Autor,int>
     {
-        private IEnumerable<Autor> ExecuteReader()
+        public IEnumerable<Autor> Get(string query)
         {
-           return base.ExecuteReader("SELECT * FROM T_Autors");
+           return base.ExecuteReader(query);
         }
     }
 }

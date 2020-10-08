@@ -21,17 +21,16 @@ namespace ApplicationIMDB.Controllers
             LastName = "Bibine",
         };
         List<Autor> listAut = new List<Autor>();
-        private AutorController()
+        public AutorController()
         {
-
+            service = new AutorService();
+            repository = new AutorRepository();
         }
         // GET: Autor
         public ActionResult Index()
-        {   
-
-            listAut.Add(autor);
-            listAut.Add(autor);
-            return View(listAut);
+        {
+            IEnumerable<Autor> listAutors = service.Get();
+            return View(listAutors);
         }
 
         // GET: Autor/Details/5
