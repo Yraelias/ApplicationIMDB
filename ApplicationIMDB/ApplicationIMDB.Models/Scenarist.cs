@@ -12,6 +12,6 @@ namespace ApplicationIMDB.Models
         [Required]
         private string FirstName { get; set; }
         [Required]
-        private int LastName { get; set; }
+        private string LastName { get; set; }
     }
 }

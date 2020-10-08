@@ -141,3 +141,4 @@ E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreap
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\ApplicationIMDB.Models.dll
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\ApplicationIMDB.DAL.pdb
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\ApplicationIMDB.Models.pdb
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Actor\Index.cshtml.g.cs
