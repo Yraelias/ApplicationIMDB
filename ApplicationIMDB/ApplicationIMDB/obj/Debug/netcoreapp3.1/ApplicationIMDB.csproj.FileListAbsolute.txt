@@ -135,3 +135,9 @@ E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreap
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\ApplicationIMDB.csproj.CoreCompileInputs.cache
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\ApplicationIMDB.MvcApplicationPartsAssemblyInfo.cache
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\ApplicationIMDB.DAL.dll
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\ApplicationIMDB.Models.dll
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\ApplicationIMDB.DAL.pdb
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\ApplicationIMDB.Models.pdb

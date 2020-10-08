@@ -1,0 +1,8 @@
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.Models\bin\Debug\netstandard2.0\ApplicationIMDB.Models.deps.json
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.Models\bin\Debug\netstandard2.0\ApplicationIMDB.Models.dll
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.Models\obj\Debug\netstandard2.0\ApplicationIMDB.Models.AssemblyInfoInputs.cache
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.Models\obj\Debug\netstandard2.0\ApplicationIMDB.Models.AssemblyInfo.cs
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.Models\obj\Debug\netstandard2.0\ApplicationIMDB.Models.csproj.CoreCompileInputs.cache
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.Models\bin\Debug\netstandard2.0\ApplicationIMDB.Models.pdb
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.Models\obj\Debug\netstandard2.0\ApplicationIMDB.Models.dll
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.Models\obj\Debug\netstandard2.0\ApplicationIMDB.Models.pdb

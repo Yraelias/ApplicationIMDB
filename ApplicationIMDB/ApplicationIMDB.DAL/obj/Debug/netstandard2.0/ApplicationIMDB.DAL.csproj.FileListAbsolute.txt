@@ -2,3 +2,11 @@ E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\bin\Debug\netst
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\obj\Debug\netstandard2.0\ApplicationIMDB.DAL.csprojAssemblyReference.cache
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\obj\Debug\netstandard2.0\ApplicationIMDB.DAL.AssemblyInfoInputs.cache
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\obj\Debug\netstandard2.0\ApplicationIMDB.DAL.AssemblyInfo.cs
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\obj\Debug\netstandard2.0\ApplicationIMDB.DAL.csproj.CoreCompileInputs.cache
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\bin\Debug\netstandard2.0\ApplicationIMDB.DAL.deps.json
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\bin\Debug\netstandard2.0\ApplicationIMDB.DAL.dll
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\bin\Debug\netstandard2.0\ApplicationIMDB.DAL.pdb
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\bin\Debug\netstandard2.0\ApplicationIMDB.Models.pdb
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\obj\Debug\netstandard2.0\ApplicationIMDB.DAL.csproj.CopyComplete
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\obj\Debug\netstandard2.0\ApplicationIMDB.DAL.dll
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB.DAL\obj\Debug\netstandard2.0\ApplicationIMDB.DAL.pdb
