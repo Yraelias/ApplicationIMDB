@@ -10,8 +10,8 @@ namespace ApplicationIMDB.Models
     {
         private int Id_Scenarist { get; set; }
         [Required]
-        private string FirstName { get; set; }
+        public string FirstName { get; set; }
         [Required]
-        private string LastName { get; set; }
+        public string LastName { get; set; }
     }
 }

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationIMDB.DAL.Repositories;
+using ApplicationIMDB.DAL.Services;
+using ApplicationIMDB.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,10 +12,19 @@ namespace ApplicationIMDB.Controllers
 {
     public class ScenaristController : Controller
     {
+        ScenaristService service;
+        ScenaristRepository repository;
+
+        public ScenaristController()
+        {
+            service = new ScenaristService();
+            repository = new ScenaristRepository();
+        }
         // GET: Scenarist
         public ActionResult Index()
         {
-            return View();
+            IEnumerable<Scenarist> listScenarists = service.Get();
+            return View(listScenarists);
         }
 
         // GET: Scenarist/Details/5

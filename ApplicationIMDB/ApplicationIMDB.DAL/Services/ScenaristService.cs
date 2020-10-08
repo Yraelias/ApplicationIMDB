@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ApplicationIMDB.DAL.Services
 {
-    class ScenaristService : BaseService<Scenarist, int>
+    public class ScenaristService : BaseService<Scenarist, int>
     {
         ScenaristRepository repo;
         public ScenaristService()

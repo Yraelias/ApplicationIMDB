@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ApplicationIMDB.DAL.Repositories
 {
-    class ScenaristRepository : BaseRepository<Scenarist,int>
+    public class ScenaristRepository : BaseRepository<Scenarist,int>
     {
         public IEnumerable<Scenarist> Get(string query)
         {
