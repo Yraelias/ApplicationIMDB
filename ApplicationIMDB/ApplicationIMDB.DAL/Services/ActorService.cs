@@ -30,7 +30,7 @@ namespace ApplicationIMDB.DAL.Services
 
         public override Actor GetOne(int id)
         {
-            throw new NotImplementedException();
+            return repo.GetOne("SELECT * FROM T_Actors WHERE Id_Actor = " + id);
         }
 
         public override bool Update(Actor obj)
