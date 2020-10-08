@@ -14,6 +14,9 @@ namespace ApplicationIMDB.Models
         private int Year { get; set; }
         private string Description { get; set; }
         private Scenario Scenario { get; set; }
+        private int Id_Cast { get; set; }
+        private int Id_Scenario { get; set; }
+        private int Id_Production { get; set; }
         private Casting Casting { get; set; }
         private Production Production { get; set; }
     }
