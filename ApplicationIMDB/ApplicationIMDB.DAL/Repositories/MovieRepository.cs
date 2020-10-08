@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ApplicationIMDB.DAL.Repositories
 {
-    class MovieRepository : BaseRepository<Movie,int>
+    public class MovieRepository : BaseRepository<Movie,int>
     {
         public IEnumerable<Movie> Get(string query)
         {

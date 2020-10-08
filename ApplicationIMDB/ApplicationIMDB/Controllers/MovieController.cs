@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationIMDB.DAL.Repositories;
+using ApplicationIMDB.DAL.Services;
+using ApplicationIMDB.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,10 +12,19 @@ namespace ApplicationIMDB.Controllers
 {
     public class MovieController : Controller
     {
+        MovieService service;
+        MovieRepository repository;
+
+        public MovieController()
+        {
+            service = new MovieService();
+            repository = new MovieRepository();
+        }
         // GET: Movie
         public ActionResult Index()
         {
-            return View();
+            IEnumerable<Movie> listMovies = service.Get();
+            return View(listMovies);
         }
 
         // GET: Movie/Details/5

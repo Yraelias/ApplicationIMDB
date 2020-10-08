@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ApplicationIMDB.DAL.Services
 {
-    class MovieService : BaseService<Movie, int>
+    public class MovieService : BaseService<Movie, int>
     {
         MovieRepository repo;
         public MovieService()

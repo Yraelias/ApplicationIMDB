@@ -10,13 +10,13 @@ namespace ApplicationIMDB.Models
     {
         private int Id_Movie{ get; set; }
         [Required]
-        private string Title { get; set; }
-        private int Year { get; set; }
-        private string Description { get; set; }
+        public string Title { get; set; }
+        public int Year { get; set; }
+        public string Description { get; set; }
         private Scenario Scenario { get; set; }
-        private int Id_Cast { get; set; }
-        private int Id_Scenario { get; set; }
-        private int Id_Production { get; set; }
+        public int Id_Cast { get; set; }
+        public int Id_Scenario { get; set; }
+        public int Id_Production { get; set; }
         private Casting Casting { get; set; }
         private Production Production { get; set; }
     }
