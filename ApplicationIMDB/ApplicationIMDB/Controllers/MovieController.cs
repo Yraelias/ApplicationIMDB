@@ -30,7 +30,8 @@ namespace ApplicationIMDB.Controllers
         // GET: Movie/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            Movie movie = service.GetOne(id);
+            return View(movie);
         }
 
         // GET: Movie/Create
