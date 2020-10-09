@@ -18,8 +18,7 @@ namespace ApplicationIMDB.DAL.Services
             return repo.Add("INSERT INTO [T_Movies] ([Title], [Year], [Description]) VALUES ('" +movie.Title+"',"+movie.Year+",'"+movie.Description+"')");
         }
 
-
-        public override bool DesactiveActive(int id)
+        public override bool DesactiveActive(int id, bool isActive)
         {
             throw new NotImplementedException();
         }

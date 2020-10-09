@@ -58,7 +58,31 @@ namespace ApplicationIMDB.Controllers
                 return View();
             }
         }
-
+        // POST: User/Desactivate/5
+        public ActionResult Desactivate(int id)
+        {
+            //try
+            //{
+                service.DesactiveActive(id,false);
+                return RedirectToAction("Index");
+            //}
+            //catch
+            //{
+            //    return RedirectToAction("Index");
+            //}
+        }
+        public ActionResult Activate(int id)
+        {
+            //try
+            //{
+                service.DesactiveActive(id,true);
+                return RedirectToAction("Index");
+            //}
+            //catch
+            //{
+            //    return RedirectToAction("Index");
+            //}
+        }
         // GET: User/Edit/5
         public ActionResult Edit(int id)
         {
@@ -80,34 +104,7 @@ namespace ApplicationIMDB.Controllers
             }
         }
 
-        // GET: User/Delete/5
-        public ActionResult Delete(int id)
-        {
-            try
-            {
-                service.DesactiveActive(id);
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View("Index");
-            }
-            
-        }
-
-        // POST: User/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        
+        
     }
 }

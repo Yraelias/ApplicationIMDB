@@ -61,14 +61,11 @@
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
                 @if (item.isActive == true)
                 {
-                    <a> aaaa</a>
-                    @Html.ActionLink("Désactiver", "Delete", new { id = item.Id_User })
+                    @Html.ActionLink("Désactiver", "Desactivate", new { id = item.Id_User })
                 }
                 else
                 {
-                    <a> abcd</a>
-                    @Html.DisplayFor(modelItem => item.isActive)
-                    @Html.ActionLink("Réactiver", "Delete", new { id = item.Id_User })
+                    @Html.ActionLink("Réactiver", "Activate", new { id = item.Id_User })
                 }
             </td>
         </tr>

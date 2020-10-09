@@ -15,9 +15,9 @@ namespace ApplicationIMDB.DAL.Repositories
         {
             return base.Add(query);
         }
-        public override bool DesactiveActive(int isActive, int id)
+        public override bool DesactiveActive(int id,bool isActive )
         {
-            return base.DesactiveActive(isActive, id);
+            return base.DesactiveActive(id, isActive);
         }
     }
 }
