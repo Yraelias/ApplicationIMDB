@@ -30,7 +30,8 @@ namespace ApplicationIMDB.Controllers
         // GET: Actor/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            Actor actor = service.GetOne(id);
+            return View(actor);
         }
 
         // GET: Actor/Create

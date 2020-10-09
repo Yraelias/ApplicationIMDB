@@ -8,7 +8,7 @@ namespace ApplicationIMDB.Models
 {
     public class Actor
     {
-        private int Id_Actor{ get; set; }
+        public int Id_Actor{ get; set; }
         [Required]
         public string FirstName { get; set; }
         [Required]

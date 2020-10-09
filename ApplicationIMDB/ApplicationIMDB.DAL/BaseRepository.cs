@@ -42,20 +42,26 @@ namespace ApplicationIMDB.DAL
 
         public virtual T GetOne(string query)
         {
+            List<T> list = new List<T>();
             T a;
             IDbCommand cmd = connection.CreateCommand();
             cmd.CommandText = query;
             cmd.CommandType = CommandType.Text;
             cmd.CommandTimeout = 90;
             if (connection.State == ConnectionState.Closed) connection.Open();
+
             using (IDataReader dr = cmd.ExecuteReader())
             {
-                //parcourir datareader et ajouter a une liste <T>
-               a = dr.ConvertTo<T>();
+                while (dr.Read())
+                {
+                    list.Add(dr.ConvertTo<T>());
+                }
             }
+
+            
             if (connection.State != ConnectionState.Closed)
                 connection.Close();
-            return a;
+            return list[0];
         }
     }
 }
