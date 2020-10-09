@@ -30,7 +30,7 @@ namespace ApplicationIMDB.DAL.Services
 
         public override Movie GetOne(int id)
         {
-            throw new NotImplementedException();
+            return repo.GetOne("SELECT * FROM T_Movies WHERE ID_Movie = " + id);
         }
 
         public override bool Update(Movie obj)
