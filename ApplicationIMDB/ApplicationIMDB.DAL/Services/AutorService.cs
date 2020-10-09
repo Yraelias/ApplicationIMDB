@@ -29,7 +29,7 @@ namespace ApplicationIMDB.DAL.Services
 
         public override Autor GetOne(int id)
         {
-            throw new NotImplementedException();
+            return repo.GetOne("SELECT * FROM T_Autors WHERE Id_Autor = " + id);
         }
 
         public override bool Update(Autor obj)

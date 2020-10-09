@@ -11,5 +11,9 @@ namespace ApplicationIMDB.DAL.Repositories
         {
            return base.ExecuteReader(query);
         }
+        public override Autor GetOne(string query)
+        {
+            return base.GetOne(query);
+        }
     }
 }
