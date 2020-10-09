@@ -8,7 +8,7 @@ namespace ApplicationIMDB.Models
 {
     public class Movie
     {
-        private int Id_Movie{ get; set; }
+        public int Id_Movie{ get; set; }
         [Required]
         public string Title { get; set; }
         public int Year { get; set; }
