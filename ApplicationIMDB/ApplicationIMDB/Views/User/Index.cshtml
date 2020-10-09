@@ -54,15 +54,22 @@
                 @Html.DisplayFor(modelItem => item.Date_Of_Birth)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.isActive)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.RoleName.Name)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @if (item.isActive == true)
+                {
+                    <a> aaaa</a>
+                    @Html.ActionLink("Désactiver", "Delete", new { id = item.Id_User })
+                }
+                else
+                {
+                    <a> abcd</a>
+                    @Html.DisplayFor(modelItem => item.isActive)
+                    @Html.ActionLink("Réactiver", "Delete", new { id = item.Id_User })
+                }
             </td>
         </tr>
 }

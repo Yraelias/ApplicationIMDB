@@ -21,10 +21,11 @@ namespace ApplicationIMDB.DAL.Services
             return repo.Add("INSERT INTO[T_Users] ([Login],[ID_role],[Password],[FirstName],[LastName],[Date_of_birth],[isActive]) VALUES ('" + user.Login + "', 2, ' " + user.Password + " ', ' " + user.FirstName + " ', ' " + user.LastName + " ', ' " + user.Date_Of_Birth + " ', 1)");
         }
 
-        public override bool Delete(User id)
+        public override bool DesactiveActive(int id)
         {
-            throw new NotImplementedException();
+            return repo.DesactiveActive(0, id);
         }
+
 
         public override IEnumerable<User> Get()
         {

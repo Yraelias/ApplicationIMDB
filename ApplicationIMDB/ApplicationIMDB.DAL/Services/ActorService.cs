@@ -18,7 +18,7 @@ namespace ApplicationIMDB.DAL.Services
             return repo.Add("INSERT INTO T_Actors ([FirstName],[LastName]) VALUES ('" + actor.FirstName + "', '" + actor.LastName +"')");
         }
 
-        public override bool Delete(Actor id)
+        public override bool DesactiveActive(int id)
         {
             throw new NotImplementedException();
         }

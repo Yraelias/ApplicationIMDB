@@ -22,6 +22,10 @@ namespace ApplicationIMDB.DAL.Extensions
                     if (odr.GetValue(i) == DBNull.Value) pi.SetValue(retour, null);//si dans la db c'est null,Membre.Id= null;
                     else
                     {
+                        if (pi.PropertyType == typeof(bool))
+                        {
+                            pi.SetValue(retour, bool.Parse(odr.GetValue(i).ToString()));
+                        }
                         if (pi.PropertyType == typeof(int))
                         {
                             pi.SetValue(retour, int.Parse(odr.GetValue(i).ToString()));

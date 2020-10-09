@@ -8,6 +8,7 @@ namespace ApplicationIMDB.Models
 {
     public class User
     {
+        public int Id_User { get; set; }
         [Required]
         public string Login { get; set; }
         [Required]

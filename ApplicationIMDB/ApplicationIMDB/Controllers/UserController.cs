@@ -43,12 +43,12 @@ namespace ApplicationIMDB.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(User user)
         {
-            service.Add(user);
+            
             try
             {
                 if (ModelState.IsValid)
                 {
-                    
+                    service.Add(user);
                     return RedirectToAction("Index");
                 }
                 return View(user);
@@ -83,7 +83,16 @@ namespace ApplicationIMDB.Controllers
         // GET: User/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            try
+            {
+                service.DesactiveActive(id);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View("Index");
+            }
+            
         }
 
         // POST: User/Delete/5

@@ -43,7 +43,6 @@ namespace ApplicationIMDB.DAL
         public virtual T GetOne(string query)
         {
             List<T> list = new List<T>();
-            T a;
             IDbCommand cmd = connection.CreateCommand();
             cmd.CommandText = query;
             cmd.CommandType = CommandType.Text;

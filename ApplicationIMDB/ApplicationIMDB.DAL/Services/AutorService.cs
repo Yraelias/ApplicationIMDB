@@ -17,7 +17,7 @@ namespace ApplicationIMDB.DAL.Services
             throw new NotImplementedException();
         }
 
-        public override bool Delete(Autor id)
+        public override bool DesactiveActive(int id)
         {
             throw new NotImplementedException();
         }

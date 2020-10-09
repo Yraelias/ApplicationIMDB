@@ -18,7 +18,7 @@ namespace ApplicationIMDB.DAL.Services
             throw new NotImplementedException();
         }
 
-        public override bool Delete(Scenarist id)
+        public override bool DesactiveActive(int id)
         {
             throw new NotImplementedException();
         }
