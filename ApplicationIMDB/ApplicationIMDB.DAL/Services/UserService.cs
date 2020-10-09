@@ -16,9 +16,9 @@ namespace ApplicationIMDB.DAL.Services
             repo = new UserRepository();
             roleService = new RoleService();
         }
-        public override bool Add(User id)
+        public override bool Add(User user)
         {
-            throw new NotImplementedException();
+            return repo.Add("INSERT INTO[T_Users] ([Login],[ID_role],[Password],[FirstName],[LastName],[Date_of_birth],[isActive]) VALUES ('" + user.Login + "', 2, ' " + user.Password + " ', ' " + user.FirstName + " ', ' " + user.LastName + " ', ' " + user.Date_Of_Birth + " ', 1)");
         }
 
         public override bool Delete(User id)

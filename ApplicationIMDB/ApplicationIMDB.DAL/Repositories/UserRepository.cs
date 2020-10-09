@@ -11,5 +11,9 @@ namespace ApplicationIMDB.DAL.Repositories
         {
             return base.ExecuteReader(query);
         }
+        public override bool Add(string query)
+        {
+            return base.Add(query);
+        }
     }
 }

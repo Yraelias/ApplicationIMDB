@@ -41,11 +41,17 @@ namespace ApplicationIMDB.Controllers
         // POST: User/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(User user)
         {
+            service.Add(user);
             try
             {
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    
+                    return RedirectToAction("Index");
+                }
+                return View(user);
             }
             catch
             {
