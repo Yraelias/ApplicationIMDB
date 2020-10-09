@@ -43,11 +43,16 @@ namespace ApplicationIMDB.Controllers
         // POST: Movie/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Movie movie)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    service.Add(movie);
+                    return RedirectToAction("Index");
+                }
+                return View(movie);
             }
             catch
             {

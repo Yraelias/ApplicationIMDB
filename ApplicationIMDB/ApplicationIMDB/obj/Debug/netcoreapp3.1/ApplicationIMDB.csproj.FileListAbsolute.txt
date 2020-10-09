@@ -106,7 +106,6 @@ E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreap
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Create.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Autor\Index.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Autor\Details.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Autor\Create.cshtml.g.cs
@@ -148,3 +147,4 @@ E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreap
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Index.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Actor\Details.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Details.cshtml.g.cs
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Create.cshtml.g.cs
