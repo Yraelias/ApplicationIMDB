@@ -76,5 +76,17 @@ namespace ApplicationIMDB.DAL
             if (a == 1) return true;
             return false;
         }
+        public virtual bool DesactiveActive(int isActive, int id)
+        {
+            int a;
+            IDbCommand cmd = connection.CreateCommand();
+            cmd.CommandText = "UPDATE[dbo].[T_Users] SET[isActive] = "+ isActive  +" WHERE Id_User = "+id  ;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandTimeout = 90;
+            if (connection.State == ConnectionState.Closed) connection.Open();
+            a = cmd.ExecuteNonQuery();
+            if (a == 1) return true;
+            return false;
+        }
     }
 }
