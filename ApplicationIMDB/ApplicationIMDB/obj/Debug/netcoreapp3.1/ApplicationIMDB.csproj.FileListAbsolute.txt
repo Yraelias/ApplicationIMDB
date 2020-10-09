@@ -148,3 +148,4 @@ E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreap
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Actor\Details.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Details.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Create.cshtml.g.cs
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Actor\Create.cshtml.g.cs
