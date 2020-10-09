@@ -63,5 +63,18 @@ namespace ApplicationIMDB.DAL
                 connection.Close();
             return list[0];
         }
+
+        public virtual  bool Add(string query)
+        {
+            int a = 0;
+            IDbCommand cmd = connection.CreateCommand();
+            cmd.CommandText = query;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandTimeout = 90;
+            if (connection.State == ConnectionState.Closed) connection.Open();
+            a = cmd.ExecuteNonQuery();
+            if (a == 1) return true;
+            return false;
+        }
     }
 }

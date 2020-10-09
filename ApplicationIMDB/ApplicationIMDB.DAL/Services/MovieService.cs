@@ -13,9 +13,9 @@ namespace ApplicationIMDB.DAL.Services
         {
             repo = new MovieRepository();
         }
-        public override bool Add(Movie id)
+        public override bool Add(Movie movie)
         {
-            throw new NotImplementedException();
+            return repo.Add("INSERT INTO [T_Movies] ([Title], [Year], [Description]) VALUES ('" +movie.Title+"',"+movie.Year+",'"+movie.Description+"')");
         }
 
         public override bool Delete(Movie id)
