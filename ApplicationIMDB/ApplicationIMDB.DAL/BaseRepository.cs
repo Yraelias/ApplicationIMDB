@@ -103,6 +103,15 @@ namespace ApplicationIMDB.DAL
             return a;
         }
 
-        
+        public virtual bool CheckPassword(int id,string password)
+        {
+            IDbCommand cmd = connection.CreateCommand();
+            cmd.CommandText = "SELECT * FROM T_Users WHERE Id_User = "+id+" AND Password LIKE '"+password+"'";
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandTimeout = 90;
+            if (connection.State == ConnectionState.Closed) connection.Open();
+            if (cmd.ExecuteScalar() != null) return true;
+            else return false; //Mdp faux 
+        }
     }
 }

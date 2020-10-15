@@ -26,9 +26,11 @@ namespace ApplicationIMDB.DAL.Services
             return repo.DesactiveActive(id, isActive);
         }
 
-        public int SignIn (User user)
+        public User SignIn (User user)
         {
-            return repo.SignIn(user.Login);
+            user.Id_User = repo.SignIn(user.Login);
+            if (!repo.CheckPassword(user.Id_User, user.Password)) return new User();
+            return  new User();
         }
 
         public override IEnumerable<User> Get()

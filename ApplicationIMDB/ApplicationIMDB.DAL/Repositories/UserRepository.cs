@@ -23,8 +23,13 @@ namespace ApplicationIMDB.DAL.Repositories
         {
             int a = 0;
             a = base.SignIn(login);
-            if (a == 0) return 0;
-            return 1;
+            return a;
+        }
+
+        public  User CheckPassword(User user)
+        {
+            
+            return new User();
         }
     }
 }
