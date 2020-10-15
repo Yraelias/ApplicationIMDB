@@ -32,49 +32,9 @@ namespace ApplicationIMDB.Controllers
         public ActionResult SignIn(User user)
         {
                 user = service.SignIn(user);
-                return View();  
-        }
-
-        // GET: SignIn/Edit/5
-        public ActionResult Edit(int id)
-        {
+                if(user  != null ) return View("../User/Details",user);
             return View();
         }
 
-        // POST: SignIn/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: SignIn/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: SignIn/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

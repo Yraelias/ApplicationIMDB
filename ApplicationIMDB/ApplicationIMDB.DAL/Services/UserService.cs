@@ -29,8 +29,10 @@ namespace ApplicationIMDB.DAL.Services
         public User SignIn (User user)
         {
             user.Id_User = repo.SignIn(user.Login);
-            if (!repo.CheckPassword(user.Id_User, user.Password)) return new User();
-            return  new User();
+            bool a = false;
+            a = repo.CheckPassword(user.Id_User, user.Password);
+            if (a == true) return GetOne(user.Id_User) ;
+            return null;
         }
 
         public override IEnumerable<User> Get()
@@ -55,7 +57,6 @@ namespace ApplicationIMDB.DAL.Services
 
             return listUsers;
         }
-
         public override User GetOne(int id)
         {
             return repo.GetOne("SELECT * FROM T_Users WHERE Id_User = " + id);

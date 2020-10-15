@@ -60,6 +60,7 @@ namespace ApplicationIMDB.DAL
             
             if (connection.State != ConnectionState.Closed)
                 connection.Close();
+            if (list.Count == 0) return default;
             return list[0];
         }
 
@@ -106,11 +107,11 @@ namespace ApplicationIMDB.DAL
         public virtual bool CheckPassword(int id,string password)
         {
             IDbCommand cmd = connection.CreateCommand();
-            cmd.CommandText = "SELECT * FROM T_Users WHERE Id_User = "+id+" AND Password LIKE '"+password+"'";
+            cmd.CommandText = "SELECT COUNT(*) FROM T_Users WHERE Id_User = "+id+" AND Password LIKE '"+password+"'";
             cmd.CommandType = CommandType.Text;
             cmd.CommandTimeout = 90;
             if (connection.State == ConnectionState.Closed) connection.Open();
-            if (cmd.ExecuteScalar() != null) return true;
+            if ((int)cmd.ExecuteScalar() > 0) return true;
             else return false; //Mdp faux 
         }
     }

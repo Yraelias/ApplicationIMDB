@@ -26,10 +26,10 @@ namespace ApplicationIMDB.DAL.Repositories
             return a;
         }
 
-        public  User CheckPassword(User user)
+        public  bool CheckPassword(User user)
         {
-            
-            return new User();
+
+            return base.CheckPassword(user.Id_User, user.Password);
         }
 
         public override User GetOne(string query)
