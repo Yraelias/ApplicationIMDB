@@ -24,7 +24,7 @@ namespace ApplicationIMDB.Controllers
         public ActionResult Index()
         {
             IEnumerable<Movie> listMovies = service.Get();
-            return View(listMovies);
+            return View("../anonymous/Movie/Index",listMovies);
         }
 
         // GET: Movie/Details/5

@@ -30,7 +30,16 @@ namespace ApplicationIMDB.Controllers
         public ActionResult Details(int id)
         {
             User user = service.GetOne(id);
-            return View(user);
+            switch (user.Id_Role)
+            {
+                case 1:
+                    return View("../Admin/User/Details", user);
+                case 2:
+                    return View("../regular/User/Details", user);
+                default:
+                    return View();
+            }
+            
         }
 
         // GET: User/Create

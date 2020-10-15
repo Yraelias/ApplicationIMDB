@@ -22,7 +22,7 @@ namespace ApplicationIMDB.Controllers
         // GET: SignIn
         public ActionResult Index()
         {
-            return View();
+            return View("../anonymous/SignIn/Index");
         }
 
 
@@ -32,7 +32,11 @@ namespace ApplicationIMDB.Controllers
         public ActionResult SignIn(User user)
         {
                 user = service.SignIn(user);
-                if(user  != null ) return View("../User/Details",user);
+                if(user  != null )
+                {
+                        return RedirectToAction("Details","User",new { @id = user.Id_User });
+                }
+                
             return View();
         }
 
