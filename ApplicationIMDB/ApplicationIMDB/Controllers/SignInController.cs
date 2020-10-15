@@ -31,9 +31,8 @@ namespace ApplicationIMDB.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult SignIn(User user)
         {
-                int a = 0;
-                a = service.SignIn(user);
-                return View();
+                user = service.SignIn(user);
+                return View();  
         }
 
         // GET: SignIn/Edit/5

@@ -58,7 +58,7 @@ namespace ApplicationIMDB.DAL.Services
 
         public override User GetOne(int id)
         {
-            throw new NotImplementedException();
+            return repo.GetOne("SELECT * FROM T_Users WHERE Id_User = " + id);
         }
 
         public override bool Update(User obj)

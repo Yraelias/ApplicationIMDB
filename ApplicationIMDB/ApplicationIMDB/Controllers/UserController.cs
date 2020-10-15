@@ -29,7 +29,8 @@ namespace ApplicationIMDB.Controllers
         // GET: User/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            User user = service.GetOne(id);
+            return View(user);
         }
 
         // GET: User/Create

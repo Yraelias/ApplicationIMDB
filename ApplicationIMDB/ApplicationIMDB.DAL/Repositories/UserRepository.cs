@@ -31,5 +31,10 @@ namespace ApplicationIMDB.DAL.Repositories
             
             return new User();
         }
+
+        public override User GetOne(string query)
+        {
+            return base.GetOne(query);
+        }
     }
 }
