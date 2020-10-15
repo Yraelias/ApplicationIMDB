@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationIMDB.DAL.Repositories;
+using ApplicationIMDB.DAL.Services;
+using ApplicationIMDB.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,37 +12,28 @@ namespace ApplicationIMDB.Controllers
 {
     public class SignInController : Controller
     {
+        UserRepository repository;
+        UserService service;
+        public   SignInController()
+        {
+            service = new UserService();
+            repository = new UserRepository();
+        }
         // GET: SignIn
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: SignIn/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: SignIn/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
 
         // POST: SignIn/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult SignIn(User user)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
+                int a = 0;
+                a = service.SignIn(user);
                 return View();
-            }
         }
 
         // GET: SignIn/Edit/5

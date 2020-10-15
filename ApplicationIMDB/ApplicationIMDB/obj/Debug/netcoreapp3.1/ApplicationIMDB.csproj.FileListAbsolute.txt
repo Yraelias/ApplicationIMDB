@@ -150,3 +150,4 @@ E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreap
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Create.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Actor\Create.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\User\Create.cshtml.g.cs
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\SignIn\Index.cshtml.g.cs

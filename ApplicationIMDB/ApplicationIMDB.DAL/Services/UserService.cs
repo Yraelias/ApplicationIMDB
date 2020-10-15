@@ -18,7 +18,7 @@ namespace ApplicationIMDB.DAL.Services
         }
         public override bool Add(User user)
         {
-            return repo.Add("INSERT INTO[T_Users] ([Login],[ID_role],[Password],[FirstName],[LastName],[Date_of_birth],[isActive]) VALUES ('" + user.Login + "', 2, ' " + user.Password + " ', ' " + user.FirstName + " ', ' " + user.LastName + " ', ' " + user.Date_Of_Birth + " ', 1)");
+            return repo.Add("INSERT INTO[T_Users] ([Login],[ID_role],[Password],[FirstName],[LastName],[Date_of_birth],[isActive]) VALUES ('" + user.Login + "', 2, '" + user.Password + "', '" + user.FirstName + "', '" + user.LastName + "', '" + user.Date_Of_Birth + "', 1)");
         }
 
         public override bool DesactiveActive(int id,bool isActive)
@@ -26,6 +26,10 @@ namespace ApplicationIMDB.DAL.Services
             return repo.DesactiveActive(id, isActive);
         }
 
+        public int SignIn (User user)
+        {
+            return repo.SignIn(user.Login);
+        }
 
         public override IEnumerable<User> Get()
         {

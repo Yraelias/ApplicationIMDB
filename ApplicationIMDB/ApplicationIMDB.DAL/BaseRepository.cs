@@ -89,5 +89,20 @@ namespace ApplicationIMDB.DAL
             if (a == 1) return true;
             return false;
         }
+
+        public virtual int SignIn(string login)
+        {
+            int a = 0;
+            IDbCommand cmd = connection.CreateCommand();
+            cmd.CommandText = "SELECT Id_User FROM T_Users WHERE Login LIKE '" +login+ "' " ;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandTimeout = 90;
+            if (connection.State == ConnectionState.Closed) connection.Open();
+            if (cmd.ExecuteScalar() != null) a = (int)cmd.ExecuteScalar();
+            else return 0; //login inexistant 
+            return a;
+        }
+
+        
     }
 }

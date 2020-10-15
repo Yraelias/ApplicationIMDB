@@ -19,5 +19,12 @@ namespace ApplicationIMDB.DAL.Repositories
         {
             return base.DesactiveActive(id, isActive);
         }
+        public override int SignIn(string login)
+        {
+            int a = 0;
+            a = base.SignIn(login);
+            if (a == 0) return 0;
+            return 1;
+        }
     }
 }
