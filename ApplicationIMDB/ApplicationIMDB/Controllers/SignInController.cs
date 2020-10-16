@@ -45,7 +45,7 @@ namespace ApplicationIMDB.Controllers
                 return RedirectToAction("Details","User",new { @id = user.Id_User });
                 }
                 
-            return View();
+            return View("../anonymous/SignIn/Index",user);
         }
 
     }
