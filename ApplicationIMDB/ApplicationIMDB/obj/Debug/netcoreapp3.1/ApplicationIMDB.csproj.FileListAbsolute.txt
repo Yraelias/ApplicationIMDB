@@ -164,3 +164,4 @@ E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreap
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\anonymous\_Layout.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\anonymous\_ViewStart.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Regular\_LayoutRegular.cshtml.g.cs
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Regular\Movie\Index.cshtml.g.cs

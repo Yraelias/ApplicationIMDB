@@ -35,16 +35,11 @@ namespace ApplicationIMDB.DAL.Services
             if (a == true)
             {
                 user = GetOne(user.Id_User);
-                StorageSession(user);
                 return user;
             }
             return null;
         }
 
-        void StorageSession(User user)
-        {
-            
-        }
 
         public override IEnumerable<User> Get()
         {

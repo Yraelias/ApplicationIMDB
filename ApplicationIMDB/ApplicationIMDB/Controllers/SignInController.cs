@@ -18,7 +18,6 @@ namespace ApplicationIMDB.Controllers
         public const string SessionKeyLastname = "_LastName";
         public const string SessionKeyFirstname = "_FirstName";
         public const string SessionKeyRole = "_Role";
-        const string SessionKeyTime = "_Time";
         public   SignInController()
         {
             service = new UserService();
