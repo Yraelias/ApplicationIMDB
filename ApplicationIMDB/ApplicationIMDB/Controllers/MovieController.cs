@@ -33,19 +33,21 @@ namespace ApplicationIMDB.Controllers
                 default:
                     return View("../anonymous/Movie/Index", listMovies);
             }
-            
-            
-            
         }
 
         // GET: Movie/Details/5
         public ActionResult Details(int id)
         {
-            
-
-            
             Movie movie = service.GetOne(id);
-            return View(movie);
+            switch (HttpContext.Session.GetInt32("_Role"))
+            {
+                case 1: //Admin
+                    return View("../Admin/Movie/Details", movie);
+                case 2: //Regular
+                    return View("../Regular/Movie/Details", movie);
+                default:
+                    return View("../anonymous/Movie/Details", movie);
+            }
         }
 
         // GET: Movie/Create
