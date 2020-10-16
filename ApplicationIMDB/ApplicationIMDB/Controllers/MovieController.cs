@@ -66,7 +66,7 @@ namespace ApplicationIMDB.Controllers
                 if (ModelState.IsValid)
                 {
                     service.Add(movie);
-                    return RedirectToAction("Index");
+                    return RedirectToAction("../Admin/Movie/Index");
                 }
                 return View(movie);
             }
@@ -79,7 +79,8 @@ namespace ApplicationIMDB.Controllers
         // GET: Movie/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Movie movie = service.GetOne(id);
+            return View("../Admin/Movie/Edit",movie);
         }
 
         // POST: Movie/Edit/5

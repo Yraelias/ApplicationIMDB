@@ -71,27 +71,27 @@ namespace ApplicationIMDB.Controllers
         // POST: User/Desactivate/5
         public ActionResult Desactivate(int id)
         {
-            //try
-            //{
+            try
+            {
                 service.DesactiveActive(id,false);
                 return RedirectToAction("Index");
-            //}
-            //catch
-            //{
-            //    return RedirectToAction("Index");
-            //}
+            }
+            catch
+            {
+                return RedirectToAction("Index");
+            }
         }
         public ActionResult Activate(int id)
         {
-            //try
-            //{
+            try
+            {
                 service.DesactiveActive(id,true);
                 return RedirectToAction("Index");
-            //}
-            //catch
-            //{
-            //    return RedirectToAction("Index");
-            //}
+            }
+            catch
+            {
+                return RedirectToAction("Index");
+            }
         }
         // GET: User/Edit/5
         public ActionResult Edit(int id)
