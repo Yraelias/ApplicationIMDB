@@ -11,9 +11,9 @@ namespace ApplicationIMDB.DAL.Repositories
         {
             return base.ExecuteReader(query);
         }
-        public override bool Add(string query)
+        public override bool AddorUpdate(string query)
         {
-            return base.Add(query);
+            return base.AddorUpdate(query);
         }
         public override bool DesactiveActive(int id,bool isActive )
         {

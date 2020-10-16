@@ -12,8 +12,9 @@ namespace ApplicationIMDB.DAL.Services
         {
             repo = new AutorRepository();
         }
-        public override bool Add(Autor id)
+        public override bool AddorUpdate(Autor id,bool Update)
         {
+            if (Update) ;
             throw new NotImplementedException();
         }
 
@@ -32,9 +33,5 @@ namespace ApplicationIMDB.DAL.Services
             return repo.GetOne("SELECT * FROM T_Autors WHERE Id_Autor = " + id);
         }
 
-        public override bool Update(Autor obj)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

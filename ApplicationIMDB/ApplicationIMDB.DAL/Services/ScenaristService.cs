@@ -13,8 +13,10 @@ namespace ApplicationIMDB.DAL.Services
         {
             repo = new ScenaristRepository();
         }
-        public override bool Add(Scenarist id)
+
+        public override bool AddorUpdate(Scenarist id,bool Update)
         {
+            if (Update) ;
             throw new NotImplementedException();
         }
 
@@ -29,11 +31,6 @@ namespace ApplicationIMDB.DAL.Services
         }
 
         public override Scenarist GetOne(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override bool Update(Scenarist obj)
         {
             throw new NotImplementedException();
         }

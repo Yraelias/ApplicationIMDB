@@ -64,7 +64,7 @@ namespace ApplicationIMDB.DAL
             return list[0];
         }
 
-        public virtual  bool Add(string query)
+        public virtual  bool AddorUpdate(string query)
         {
             int a = 0;
             IDbCommand cmd = connection.CreateCommand();

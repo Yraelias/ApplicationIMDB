@@ -13,9 +13,10 @@ namespace ApplicationIMDB.DAL.Services
         {
             repo = new MovieRepository();
         }
-        public override bool Add(Movie movie)
+        public override bool AddorUpdate(Movie movie, bool Update)
         {
-            return repo.Add("INSERT INTO [T_Movies] ([Title], [Year], [Description]) VALUES ('" +movie.Title+"',"+movie.Year+",'"+movie.Description+"')");
+            if (Update) return repo.AddorUpdate("UPDATE T_Movies SET Title = '" + movie.Title + "', Year = '" + movie.Year + "', Description = '" + movie.Description + "'WHERE ID_Movie = " + movie.Id_Movie);
+            return repo.AddorUpdate("INSERT INTO [T_Movies] ([Title], [Year], [Description]) VALUES ('" + movie.Title + "'," + movie.Year + ",'" + movie.Description + "')");
         }
 
         public override bool DesactiveActive(int id, bool isActive)
@@ -33,9 +34,5 @@ namespace ApplicationIMDB.DAL.Services
             return repo.GetOne("SELECT * FROM T_Movies WHERE ID_Movie = " + id);
         }
 
-        public override bool Update(Movie obj)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

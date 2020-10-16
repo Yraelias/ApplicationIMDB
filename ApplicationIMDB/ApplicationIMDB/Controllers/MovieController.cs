@@ -65,7 +65,7 @@ namespace ApplicationIMDB.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    service.Add(movie);
+                    service.AddorUpdate(movie,false);
                     return RedirectToAction("../Admin/Movie/Index");
                 }
                 return View(movie);
@@ -86,15 +86,16 @@ namespace ApplicationIMDB.Controllers
         // POST: Movie/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(Movie movie)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                service.AddorUpdate(movie,true);
+                return RedirectToAction("Index");
             }
             catch
             {
-                return View();
+                return View("../Admin/Movie/Edit");
             }
         }
 

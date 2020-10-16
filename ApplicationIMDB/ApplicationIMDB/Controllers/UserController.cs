@@ -58,7 +58,7 @@ namespace ApplicationIMDB.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    service.Add(user);
+                    service.AddorUpdate(user,false);
                     return RedirectToAction("Index");
                 }
                 return View(user);

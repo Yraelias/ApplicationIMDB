@@ -17,9 +17,10 @@ namespace ApplicationIMDB.DAL.Services
             repo = new UserRepository();
             roleService = new RoleService();
         }
-        public override bool Add(User user)
+        public override bool AddorUpdate(User user,bool Update)
         {
-            return repo.Add("INSERT INTO[T_Users] ([Login],[ID_role],[Password],[FirstName],[LastName],[Date_of_birth],[isActive]) VALUES ('" + user.Login + "', 2, '" + user.Password + "', '" + user.FirstName + "', '" + user.LastName + "', '" + user.Date_Of_Birth + "', 1)");
+            if (Update) ;
+                return repo.AddorUpdate("INSERT INTO[T_Users] ([Login],[ID_role],[Password],[FirstName],[LastName],[Date_of_birth],[isActive]) VALUES ('" + user.Login + "', 2, '" + user.Password + "', '" + user.FirstName + "', '" + user.LastName + "', '" + user.Date_Of_Birth + "', 1)");
         }
 
         public override bool DesactiveActive(int id,bool isActive)
@@ -66,11 +67,6 @@ namespace ApplicationIMDB.DAL.Services
         public override User GetOne(int id)
         {
             return repo.GetOne("SELECT * FROM T_Users WHERE Id_User = " + id);
-        }
-
-        public override bool Update(User obj)
-        {
-            throw new NotImplementedException();
         }
     }
 }

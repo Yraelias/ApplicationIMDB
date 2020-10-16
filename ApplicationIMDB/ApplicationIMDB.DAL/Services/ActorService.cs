@@ -13,9 +13,10 @@ namespace ApplicationIMDB.DAL.Services
         {
             repo = new ActorRepository();
         }
-        public override bool Add(Actor actor)
+        public override bool AddorUpdate(Actor actor,bool Update)
         {
-            return repo.Add("INSERT INTO T_Actors ([FirstName],[LastName]) VALUES ('" + actor.FirstName + "', '" + actor.LastName +"')");
+            if (Update) ;
+            return repo.AddorUpdate("INSERT INTO T_Actors ([FirstName],[LastName]) VALUES ('" + actor.FirstName + "', '" + actor.LastName +"')");
         }
 
         public override bool DesactiveActive(int id, bool isActive)
@@ -33,9 +34,5 @@ namespace ApplicationIMDB.DAL.Services
             return repo.GetOne("SELECT * FROM T_Actors WHERE Id_Actor = " + id);
         }
 
-        public override bool Update(Actor obj)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

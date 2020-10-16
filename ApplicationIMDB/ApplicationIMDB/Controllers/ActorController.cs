@@ -49,7 +49,7 @@ namespace ApplicationIMDB.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    service.Add(actor);
+                    service.AddorUpdate(actor,false);
                     return RedirectToAction("Index");
                 }
                 return View(actor);

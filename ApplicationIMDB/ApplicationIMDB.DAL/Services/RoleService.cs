@@ -13,7 +13,7 @@ namespace ApplicationIMDB.DAL.Services
         {
             repo = new RoleRepository();
         }
-        public override bool Add(Role id)
+        public override bool AddorUpdate(Role id,bool Update)
         {
             throw new NotImplementedException();
         }
@@ -35,9 +35,5 @@ namespace ApplicationIMDB.DAL.Services
             throw new NotImplementedException();
         }
 
-        public override bool Update(Role obj)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

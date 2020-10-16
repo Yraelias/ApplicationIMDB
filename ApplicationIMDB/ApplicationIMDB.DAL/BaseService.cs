@@ -16,8 +16,7 @@ namespace ApplicationIMDB.DAL
         }
         public abstract IEnumerable<T> Get();
         public abstract T GetOne(TKey id);
-        public abstract bool Add(T id);
-        public abstract bool Update(T obj);
+        public abstract bool AddorUpdate(T id,bool Update);
         public abstract bool DesactiveActive(int id,bool isActive);
     }
 }
