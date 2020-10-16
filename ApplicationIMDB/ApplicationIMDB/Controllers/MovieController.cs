@@ -53,7 +53,7 @@ namespace ApplicationIMDB.Controllers
         // GET: Movie/Create
         public ActionResult Create()
         {
-            return View();
+            return View("../Admin/Movie/Create");
         }
 
         // POST: Movie/Create
@@ -66,7 +66,7 @@ namespace ApplicationIMDB.Controllers
                 if (ModelState.IsValid)
                 {
                     service.AddorUpdate(movie,false);
-                    return RedirectToAction("../Admin/Movie/Index");
+                    return RedirectToAction("Index");
                 }
                 return View(movie);
             }
