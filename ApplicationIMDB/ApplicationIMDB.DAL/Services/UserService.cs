@@ -1,5 +1,6 @@
 ﻿using ApplicationIMDB.DAL.Repositories;
 using ApplicationIMDB.Models;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,8 +32,18 @@ namespace ApplicationIMDB.DAL.Services
             user.Id_User = repo.SignIn(user.Login);
             bool a = false;
             a = repo.CheckPassword(user.Id_User, user.Password);
-            if (a == true) return GetOne(user.Id_User) ;
+            if (a == true)
+            {
+                user = GetOne(user.Id_User);
+                StorageSession(user);
+                return user;
+            }
             return null;
+        }
+
+        void StorageSession(User user)
+        {
+            
         }
 
         public override IEnumerable<User> Get()

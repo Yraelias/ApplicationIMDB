@@ -14,6 +14,11 @@ namespace ApplicationIMDB.Controllers
     {
         UserRepository repository;
         UserService service;
+        public const string SessionKeyLogin = "_Login";
+        public const string SessionKeyLastname = "_LastName";
+        public const string SessionKeyFirstname = "_FirstName";
+        public const string SessionKeyRole = "_Role";
+        const string SessionKeyTime = "_Time";
         public   SignInController()
         {
             service = new UserService();
@@ -34,7 +39,11 @@ namespace ApplicationIMDB.Controllers
                 user = service.SignIn(user);
                 if(user  != null )
                 {
-                        return RedirectToAction("Details","User",new { @id = user.Id_User });
+                HttpContext.Session.SetString(SessionKeyLogin,user.Login);
+                HttpContext.Session.SetString(SessionKeyLastname, user.LastName);
+                HttpContext.Session.SetString(SessionKeyFirstname, user.FirstName);
+                HttpContext.Session.SetInt32(SessionKeyRole, user.Id_Role);
+                return RedirectToAction("Details","User",new { @id = user.Id_User });
                 }
                 
             return View();
