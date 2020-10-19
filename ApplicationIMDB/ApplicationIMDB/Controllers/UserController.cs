@@ -52,6 +52,11 @@ namespace ApplicationIMDB.Controllers
         // GET: User/Create
         public ActionResult Create()
         {
+            switch (HttpContext.Session.GetInt32("_Role"))
+            {
+                case 1:
+                return View("../Admin/User/Create");
+            }
             return View();
         }
 
@@ -60,7 +65,7 @@ namespace ApplicationIMDB.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(User user)
         {
-            
+
             try
             {
                 if (ModelState.IsValid)
