@@ -108,9 +108,17 @@ namespace ApplicationIMDB.Controllers
         // GET: User/Edit/5
         public ActionResult Edit(int id)
         {
-
             User user = service.GetOne(id);
-            return View("../Admin/User/Edit",user);
+            switch (HttpContext.Session.GetInt32("_Role"))
+            {
+                case 1:
+                    return View("../Admin/User/Edit", user);
+                case 2:
+                    return View("../regular/User/Edit", user);
+                default:
+                    return View();
+            }
+            
         }
 
         // POST: User/Edit/5
