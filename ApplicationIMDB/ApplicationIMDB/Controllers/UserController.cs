@@ -124,16 +124,35 @@ namespace ApplicationIMDB.Controllers
         // POST: User/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(User user)
         {
-            try
+            service.AddorUpdate(user, true);
+            switch (HttpContext.Session.GetInt32("_Role"))
             {
-                return RedirectToAction(nameof(Index));
+                case 1:
+                    try
+                    {
+                        
+                        return View("../Admin/User/Details",user);
+                    }
+                    catch
+                    {
+                        return View("../Admin/User/Edit",user);
+                    }
+                case 2:
+                    try
+                    {
+                        return View("../regular/User/Details", user);
+                    }
+                    catch 
+                    {
+
+                        return View("../regular/user/Edit",user);
+                    }
+                default:
+                    return View();
             }
-            catch
-            {
-                return View();
-            }
+            
         }
 
         

@@ -19,8 +19,9 @@ namespace ApplicationIMDB.DAL.Services
         }
         public override bool AddorUpdate(User user,bool Update)
         {
-            if (Update) ;
-                return repo.AddorUpdate("INSERT INTO[T_Users] ([Login],[ID_role],[Password],[FirstName],[LastName],[Date_of_birth],[isActive]) VALUES ('" + user.Login + "', 2, '" + user.Password + "', '" + user.FirstName + "', '" + user.LastName + "', '" + user.Date_Of_Birth + "', 1)");
+            
+            if (Update) return repo.AddorUpdate("UPDATE T_Users SET[Login] = '"+user.Login+"',[Password] = '"+user.Password+"',[FirstName] ='"+user.FirstName+"',[LastName] ='"+user.LastName+"',[Date_of_birth] ='"+user.Date_Of_Birth.ToString("yyyy/MM/dd")+"' WHERE Id_User = " +user.Id_User );
+                return repo.AddorUpdate("INSERT INTO[T_Users] ([Login],[ID_role],[Password],[FirstName],[LastName],[Date_of_birth],[isActive]) VALUES ('" + user.Login + "', 2, '" + user.Password + "', '" + user.FirstName + "', '" + user.LastName + "', '" + user.Date_Of_Birth.ToString("yyyy/MM/dd") + "', 1)");
         }
 
         public override bool DesactiveActive(int id,bool isActive)
