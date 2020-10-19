@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ApplicationIMDB.Controllers
 {
-    public class Comment : Controller
+    public class CommentController : Controller
     {
         // GET: Comment
         public ActionResult Index()

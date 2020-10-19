@@ -7,13 +7,15 @@ namespace ApplicationIMDB.Models
 {
     public class Comment
     {
-        private int ID_Comment { get; set; }
+        public int ID_Comment { get; set; }
         private User User { get; set; }
         private Movie Movie { get; set; }
-        private string Message { get; set; }
-        private DateTime RealeaseDate {get;set; }
-        private bool IsValidate { get; set; }
-        private int Note { get; set; }
-        private bool IsReported { get; set; }
+        public string Message { get; set; }
+        public DateTime RealeaseDate {get;set; }
+        public bool IsValidate { get; set; }
+        public int Note { get; set; }
+        public bool IsReported { get; set; }
+        public int Id_User { get; set; }
+        public int Id_Movie { get; set; }
     }
 }
