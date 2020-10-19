@@ -7,6 +7,7 @@ using ApplicationIMDB.DAL.Services;
 using ApplicationIMDB.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Server.HttpSys;
 
 namespace ApplicationIMDB.Controllers
 {
@@ -41,11 +42,16 @@ namespace ApplicationIMDB.Controllers
                 HttpContext.Session.SetString(SessionKeyLogin,user.Login);
                 HttpContext.Session.SetString(SessionKeyLastname, user.LastName);
                 HttpContext.Session.SetString(SessionKeyFirstname, user.FirstName);
-                HttpContext.Session.SetInt32(SessionKeyRole, user.Id_Role);
+                HttpContext.Session.SetInt32(SessionKeyRole, user.Id_Role); 
                 return RedirectToAction("Details","User",new { @id = user.Id_User });
                 }
                 
             return View("../anonymous/SignIn/Index",user);
+        }
+        public ActionResult Disconnect()
+        {
+            HttpContext.Session.Clear();
+            return View("../anonymous/SignIn/Index");
         }
 
     }

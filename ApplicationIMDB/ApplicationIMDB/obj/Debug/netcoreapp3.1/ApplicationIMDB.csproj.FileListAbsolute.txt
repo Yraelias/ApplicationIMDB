@@ -135,7 +135,6 @@ E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreap
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\ApplicationIMDB.Models.dll
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\ApplicationIMDB.DAL.pdb
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\bin\Debug\netcoreapp3.1\ApplicationIMDB.Models.pdb
-E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Actor\Create.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Actor\Details.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Actor\Index.cshtml.g.cs
@@ -154,11 +153,8 @@ E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreap
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Admin\_Layout.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\anonymous\Movie\Index.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\anonymous\SignIn\Index.cshtml.g.cs
-E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Regular\User\Create.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Regular\User\Details.cshtml.g.cs
-E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Regular\User\Index.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Regular\_ViewStart.cshtml.g.cs
-E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Home\_Layout.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Home\_ViewStart.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\anonymous\_Layout.cshtml.g.cs
@@ -168,3 +164,4 @@ E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreap
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\anonymous\Movie\Details.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Regular\Movie\Details.cshtml.g.cs
 E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Movie\Edit.cshtml.g.cs
+E:\Formation\ApplicationIMDB\ApplicationIMDB\ApplicationIMDB\obj\Debug\netcoreapp3.1\Razor\Views\Admin\User\Edit.cshtml.g.cs

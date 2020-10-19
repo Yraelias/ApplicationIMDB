@@ -57,7 +57,7 @@
                 @Html.DisplayFor(modelItem => item.RoleName.Name)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Edit", "Edit", new {  id=item.Id_User  }) |
                 @Html.ActionLink("Details", "Details", new {  id=item.Id_User  }) |
                 @if (item.isActive == true)
                 {

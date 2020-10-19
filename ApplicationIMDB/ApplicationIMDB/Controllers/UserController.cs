@@ -23,14 +23,21 @@ namespace ApplicationIMDB.Controllers
         public ActionResult Index()
         {
             IEnumerable<User> listUsers = service.Get();
-            return View(listUsers);
+            switch (HttpContext.Session.GetInt32("_Role"))
+            {
+                case 1:
+                    return View("../Admin/User/Index",listUsers);
+                default:
+                    return RedirectToAction("Index", "Movie");
+            }
         }
 
         // GET: User/Details/5
         public ActionResult Details(int id)
         {
             User user = service.GetOne(id);
-            switch (user.Id_Role)
+
+            switch (HttpContext.Session.GetInt32("_Role"))
             {
                 case 1:
                     return View("../Admin/User/Details", user);
@@ -96,7 +103,9 @@ namespace ApplicationIMDB.Controllers
         // GET: User/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+
+            User user = service.GetOne(id);
+            return View("../Admin/User/Edit",user);
         }
 
         // POST: User/Edit/5
